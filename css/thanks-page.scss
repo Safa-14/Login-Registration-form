@@ -1,0 +1,546 @@
+$image-width:150px;
+$image-height: 25vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/ZhiMangXing-Regular.ttf);
+}
+
+section.thanks {
+
+    /* THE BACKGROUND IMAGE */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+
+    &>.star {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        animation: star-animate 8s ease-in-out infinite;
+        
+    }
+    &>.star.star1 {
+        animation-delay: 0s;
+        background-image: url(../img/star1.png);
+    }
+    &>.star.star2 {
+        animation-delay: -1s;
+        background-image: url(../img/star2.jpg);
+    } 
+    &>.star.star3 {
+        animation-delay: -2s;
+        background-image: url(../img/star3.jpg);
+    } 
+    &>.star.star4 {
+        animation-delay: -3s;
+        background-image: url(../img/star4.png);
+    }
+    &>.star.star5 {
+        animation-delay: -4s;
+        background-image: url(../img/star2.jpg);
+    }
+    &>.star.star6 {
+        animation-delay: -5s;
+        background-image: url(../img/star1.png);
+    }
+    &>.star.star7 {
+        animation-delay: -6s;
+        background-image: url(../img/star4.png);
+    }
+    &>.star.star8 {
+        animation-delay: -7s;
+        background-image: url(../img/star3.jpg);
+    }
+
+
+    /*THE CONTENT OF THE THANKS PAGE*/
+    .wrapper1 {
+        position: relative;
+        display: flex;   /*i7ot.hom bjanb b3adhhom */
+        align-items: center;  /*7at.hom fel west selon el x */
+        justify-content: center;  /*7at.hom fel west selon y */
+        height: 490px;  
+        width: 50%;
+
+        &>.div-1 {
+            position: absolute;  /*7atinehom fo9 b3adhhom */
+            height: 50%;
+            width: 50%;
+            z-index: 2;
+
+            &>img {
+                width: $image-width;
+                height: $image-height;
+                border-radius: 50%;
+                border: 3px solid rgba(226, 218, 218, 0.404)ack;
+                margin-top: 110px;
+                margin-left: 78px;
+                box-shadow: 3px 0px 30px rgb(230, 224, 224);
+            } 
+        }
+
+
+        &>.thanksMsg {
+            position: absolute;
+            top: 200px;
+            font: 400 100px/1.3 'Oleo Script', Helvetica, sans-serif;
+            color: #fcf5f5a6;
+            text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+            animation: animate1 5s steps(22) infinite;
+            white-space: nowrap;  /* ya3malha fard star */
+            overflow: hidden;
+            font-size: 65px;
+            left: 800px;
+            &>p:nth-child(1) {
+                padding-left: 40px;
+            }
+            &>p:nth-child(3) {
+                padding-left: 120px;
+            }
+        }
+        .card {
+            width: 100%;
+            height: 480px;
+    
+            &>.front {
+                padding: 20px;
+                position: absolute;
+                height: 100vh;
+                width: 100%;
+                z-index: 1;
+                overflow: hidden;
+                backface-visibility: hidden;
+                animation: animate 20s infinite;
+                transition: transform 16s linear;
+                transform: perspective(600px) rotateY(0deg);
+
+                &>.div-3{
+                    height: 25%;
+                    width: 25%;
+                    margin: auto;
+                    margin-bottom: 10px;            
+
+                    &>img {
+                        width: $image-width;
+                        height: $image-height;
+                        animation: animate-image 20s infinite;
+                        margin-top: -5px;
+                        float: left;
+                        border-radius: 30px;
+                        background-size: cover;
+                        border: 3px solid rgba(226, 218, 218, 0.404);
+                    }
+        
+                }
+                &>.div-4 {
+                    height: 17%;
+                    width: 25%;
+                    float: left;
+                    margin-right: 50px;
+                    margin-top: 25px;
+           
+                    &>img {
+                        width: $image-width;
+                        height: $image-height;
+                        float: left;
+                        border-radius: 30px;
+                        background-size: cover;
+                        animation: animate-image 20s infinite;
+                        border: 2px solid rgba(226, 218, 218, 0.404);
+                    }
+                }
+                &>.div-5 {
+                    height: 25%;
+                    width: 25%;
+                    float: left;
+                    margin-left: 240px;
+                    margin-top: 15px;
+                    &>img {
+                        width: $image-width;
+                        height: $image-height;
+                        float: left;
+                        border-radius: 30px;
+                        animation: animate-image 20s infinite;
+                        border: 2px solid rgba(226, 218, 218, 0.404);
+                    }
+                }
+                &>.div-6 {
+                    height: 25%;
+                    width: 25%;
+                    float: left;
+                    margin: 80px 40px 0 110px;
+                    &>img {
+                        width: $image-width;
+                        height: $image-height;
+                        float: left;
+                        border-radius: 30px;
+                        animation: animate-image 20s infinite;
+                        border: 2px solid rgba(226, 218, 218, 0.404);
+                    }
+                }
+                &>.div-7 {
+                    height: 25%;
+                    width: 25%;
+                    float: left;
+                    margin: 80px 0 0 60px;
+                    &>img {
+                        width: $image-width;
+                        height: $image-height;
+                        float: left;
+                        border-radius: 30px;
+                        animation: animate-image 20s infinite;
+                        border: 2px solid rgba(226, 218, 218, 0.404);
+                    }
+                }
+            }       
+
+            &>.back {
+                padding: 20px;
+                position: absolute;
+                height: 100vh;
+                width: 100%;
+                z-index: 1;
+                overflow: hidden;
+                backface-visibility: hidden;
+                animation: animate 20s infinite;
+                transition: transform .6s linear;
+                transform: perspective(600px) rotateY(180deg);
+                display: none;
+                &>.div-3{
+                    height: 25%;
+                    width: 25%;
+                    margin: auto;
+                    margin-bottom: 10px;
+                    &>img {
+                        width: $image-width;
+                        height: $image-height;
+                        float: left;
+                        border-radius: 30px;
+                        animation: animate-image 20s infinite;
+                        border: 2px solid rgba(226, 218, 218, 0.404);
+                    }
+                }
+                &>.div-4 {
+                    height: 17%;
+                    width: 25%;
+                    float: left;
+                    margin-right: 50px;
+                    margin-top: 25px;
+                    &>img {
+                        width: $image-width;
+                        height: $image-height;
+                        float: left;
+                        border-radius: 30px;
+                        animation: animate-image 20s infinite;
+                        border: 2px solid rgba(226, 218, 218, 0.404);
+                    }
+                }
+                &>.div-5 {
+                    height: 25%;
+                    width: 25%;
+                    float: left;
+                    margin-left: 240px;
+                    margin-top: 15px;
+                    &>img {
+                        width: $image-width;
+                        height: $image-height;
+                        float: left;
+                        border-radius: 30px;
+                        animation: animate-image 20s infinite;
+                        border: 2px solid rgba(226, 218, 218, 0.404);
+                    }
+                }
+                &>.div-6 {
+                    height: 25%;
+                    width: 25%;
+                    float: left;
+                    margin: 80px 40px 0 110px;
+                    &>img {
+                        width: $image-width;
+                        height: $image-height;
+                        float: left;
+                        border-radius: 30px;
+                        animation: animate-image 20s infinite;
+                        border: 2px solid rgba(226, 218, 218, 0.404)ack;
+                    }
+                }
+                &>.div-7 {
+                    height: 25%;
+                    width: 25%;
+                    float: left;
+                    margin: 80px 0 0 60px;
+                    &>img {
+                        width: $image-width;
+                        height: $image-height;
+                        float: left;
+                        border-radius: 30px;
+                        animation: animate-image 20s infinite;
+                        border: 2px solid rgba(226, 218, 218, 0.404);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* HOVER FLIP IMAGES */
+.card:hover > .front {
+    transform: perspective(600px) rotateY(-180deg);
+    display: none;
+}
+
+.card:hover > .back {
+    display: block !important;
+    transform: perspective(600px) rotateY(0deg);
+    animation: animate 20s infinite;
+}
+
+
+     /*ANIMATION */
+     /*ANIMATION IMAGES ROTATION*/
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-image {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+    /*ANIMATION FOR THE BACKGROUND */
+@keyframes star-animate {
+    0%,20%,40%,60%,80%,100%{
+        opacity: 0;
+    }
+    10%,30%,50%,70%,90% {
+        opacity: 1;
+    }
+} 
+ 
+  /*ANIMATION FOR THE mESSAGE */
+@keyframes animate1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 891px;
+    }
+}
+
+
+@media only screen and (max-width:770px) {
+    $image-width:150px;
+    $image-height: 25vh;
+    section.thanks {
+        height: 170vh;
+        .wrapper1 {
+            width: 99vw;
+            margin-left: 1%;
+            .div-1>img {
+                margin-top: 205px;
+                animation: none 0s ;
+            }
+            .thanksMsg {
+                left: 210px;
+                top: 96vh;
+            }
+            .card>.front{
+                height: 170vh;
+                animation: none 0s;
+                transition: none 0s ;
+                .div-3 {
+                    margin-left: 270px;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+                .div-4 {
+                    margin-top: -137px;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+                .div-5 {
+                    margin-top: -137px;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+                .div-6 {
+                    margin-top: -94px;
+                    margin-left: 20%;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+                .div-7 {
+                    margin-top: -94px;
+                    margin-left: 80px;
+                    img {
+                        animation: none 0s;
+                    }
+                }
+            }
+            .back {
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width:500px) {
+    $image-width:190px;
+    $image-height: 25vh;
+    section.thanks {
+        height: 225vh;
+        width: 100%;
+        .wrapper1 {
+            width: 100vw;
+            height: 107vh;
+            margin-left: 0;
+            .div-1>img {
+                margin-top: 0;
+                margin-left: 10px;
+                animation: none 0s  ;
+            }
+            .thanksMsg {
+                left: 23%;
+                top: 0vh;
+                font-size: 2.5em;
+            }
+            .card>.front{
+                height: 170vh;
+                animation: none 0s ;
+                transition: none 0s ;
+                .div-3 {
+                    margin-top: 250px;
+                    margin-left: 26%;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+                .div-4 {
+                    margin-top: -200vh;
+                    margin-left: 26%;
+                    float: none;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+                .div-5 {
+                    margin-top: 25px;
+                    margin-left: 26%;
+                    float: none;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+                .div-6 {
+                    margin-top: 25px;
+                    margin-left: 26%;
+                    float: none;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+                .div-7 {
+                    margin-top: 25px;
+                    margin-left: 26%;
+                    float: none;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+            }
+            .back {
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width:360px) {
+    $image-width:190px;
+    $image-height: 32vh;
+    section.thanks {
+        height: 200vh;
+        width: 100%;
+        .wrapper1 {
+            width: 100vw;
+            height: 107vh;
+            margin-left: 0;
+            .div-1>img {
+                margin-top: 0;
+                margin-left: 12%;
+                animation: none  0s ;
+            }
+            .thanksMsg {
+                left: 23%;
+                top: 0vh;
+                font-size: 2.5em;
+            }
+            .card>.front{
+                height: 170vh;
+                animation: none  0s ;
+                transition: none 0s ;
+                .div-3 {
+                    margin-top: 250px;
+                    margin-left: 28%;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+                .div-4 {
+                    margin-top: -200vh;
+                    margin-left: 28%;
+                    float: none;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+                .div-5 {
+                    margin-top: 25px;
+                    margin-left: 28%;
+                    float: none;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+                .div-6 {
+                    margin-top: 25px;
+                    margin-left: 28%;
+                    float: none;
+                    img {
+                        animation: none 0s;
+                    }
+                }
+                .div-7 {
+                    margin-top: 25px;
+                    margin-left: 28%;
+                    float: none;
+                    img {
+                        animation: none 0s ;
+                    }
+                }
+            }
+            .back {
+                display: none;
+            }
+        }
+    }
+}

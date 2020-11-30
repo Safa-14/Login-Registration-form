@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js"> 
+<head>
+        <meta charset="UTF-8" />
+        <title>Login and Registration</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <link rel="stylesheet" type="text/css" href="./css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="./css/index-a.css" />
+        <link rel="stylesheet" type="text/css" href="./css/animate-custom.css" /> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.css">
+        <link rel="stylesheet" href="./css/thanks-page.css">
+        <link rel="stylesheet" href="./css/processbar.css">
+        
+      
+</head>
+    
+    <body id="b1">
+        <div class="container">
+            
+            <!-- Progress Bar Start -->
+
+
+            <!-- <h1 class="h1">Welcome</h1> -->
+   
+            <input class="button1" type="radio" name="radio" id="r1" checked>
+            <input class="button1" type="radio" name="radio" id="r2">
+            <input class="button1" type="radio" name="radio" id="r3">
+       
+            <section>				
+                <div id="container_demo" >
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <a class="hiddenanchor" id="topage3"></a>
+                    <a class="hiddenanchor" id="topage4"></a>
+
+                        <div class="neda-container">
+                            <ul class="progressBar bar">
+                                <li id="step1" class="active actions"><label for="r1">Hello There</label></li>
+                                <li id="step2" class="active actions"><label for="r2">You Can Do It</label></li>
+                                <li id="step3" class="active actions"><label for="r3">You Are Almost Done</label></li>
+                            </ul>
+                        </div>
+                        <!-- Progress Bar End  -->
+                       
+                       <div id="wrapper">
+                            <div id="login" class="animate form">
+                                   <h1>Log in</h1> 
+                                    <p> 
+                                        <label for="username" class="uname" data-icon="" > First Name</label><i class="fas fa-user-circle firstname icon"></i>
+                                        <input id="username" name="username" required="required" type="text" placeholder="Your Name"/>
+                                    </p>
+                                    <p> 
+                                        <label for="Lastname" class="youpasswd" data-icon=""> Your Last Name</label><i class="far fa-user-circle lastname icon"></i>
+                                        <input id="Lastname" name="lastname" required="required" type="lastname" placeholder="Your Last Name" />
+                                    </p>
+                                    <p class="keeplogin"> 
+                                        <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+                                        <label for="loginkeeping">I agree to the terms and Conditions</label>
+                                    </p>
+                                    
+                                
+                                    <p class="change_link">
+                        
+                                        <a href="#toregister" class="to_register">Next &raquo;</a>
+                                    </p>  
+                            </div>
+
+                            <div id="register" class="animate form">
+                                    <h1> Sign up </h1> 
+                                    <p> 
+                                        <label for="userphone" class="phone" data-icon="">Your Phone Number </label><i class="fas fa-phone-square-alt telephonenumber icon"></i>
+                                         <input type="text" placeholder=" Telephone"></input>
+                                    </p>
+                                    <p> 
+                                        <label for="Countryland" class="country" placeholder="Country"data-icon="" > Your Country </label><i class="fas fa-globe-americas land"></i>
+
+                                        <select id="Country" name="country">
+                                            <option value="australia"> Your Country</option>
+                                            <option value="australia">Afghanistan</option>
+                                            <option value="australia">Australia</option>
+                                            <option value="canada">Canada</option>
+                                            <option value="england">England</option>
+                                            <option value="usa">Germany</option>
+                                            <option value="usa">France</option>
+                                            <option value="usa">Spain</option>
+                                            <option value="usa">USA</option>
+                                        </select>
+                                    </p>
+                                    <p> 
+                                        <label for="passwordsignup_confirm" class="youpasswd" data-icon="">Descriptions </label>
+                                         <input id="haroon" name="haroonb" required="required" type="Text" placeholder="Write Your Text here"/>
+                                    </p>
+           
+                                    <p class="change_link">  
+    
+                                        <a href="#tologin" class="to_register">&laquo; Previous </a>
+                                        <a href="#topage3" class="to_register">Next &raquo;</a>
+                                    </p>
+                            </div>
+
+
+                            <div id="page3" class="animate form">
+                                <h1> Finish </h1> 
+                                    <p> 
+                                         <label for="usernamesignup" class="uname" data-icon="">Your User Name</label><i class="fas fa-user-tie username icon"></i>
+                                         <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="Your User Name" />
+                                    </p>
+                                    <p> 
+                                        <label for="emailsignup" class="youmail" data-icon="" > Your Email</label><i class="fas fa-at emailaddress icon"></i>
+                                        <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="Your Email Please"/> 
+                                    </p>
+                                    <p> 
+                                        <label for="passwordsignup" class="youpasswd" data-icon="">Your Password </label><i class="fas fa-key keyconfirm icon"></i>
+                                        <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="Your Password Please"/>
+                                    </p>
+                                    <p> 
+                                        <label for="passwordsignup_confirm" class="youpasswd" data-icon="">Please Confirm Your Password </label><i class="fas fa-key confirm icon"></i>
+                                        <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="Confirm Your Password"/>
+                                    </p>
+                
+                                    <p class="change_link">  
+								
+                                    <a href="#toregister" class="to_register">&laquo; Previous </a>
+                                    <a href="#topage4" class="to_register"> Finish </a>
+								    </p>
+                            </div>
+                        </div>
+                        
+                    <div id="page4" class="animate form">
+                        <section class="thanks">
+
+                            <!-- THE BACKGROUND IMAGE ANIMATED -->
+
+                            <div class="star star1"></div>
+                            <div class="star star2"></div>
+                            <div class="star star3"></div>
+                            <div class="star star4"></div>
+                            <div class="star star5"></div>
+                            <div class="star star6"></div>
+                            <div class="star star7"></div>
+                            <div class="star star8"></div>
+                            <div class="wrapper1">
+                    
+                                <div class="div-1">
+                                    <img src="./img/ahmad" alt="">
+                                </div>
+                    
+                                <div class="card">
+                    
+                                    <div class="front">
+                    
+                                        <div class="div-3">
+                                            <img src="./img/alen1.jpg" alt="">
+                                        </div>
+                                        <div class="div-4">
+                                            <img src="./img/haroon1.PNG" alt="">
+                                        </div>
+                                        <div class="div-5">
+                                            <img src="./img/neda1.jpg" alt="">
+                                        </div>
+                    
+                                        <div class="div-6">
+                                            <img src="./img/chumky1.jpg" alt="">
+                                        </div>
+                                        <div class="div-7">
+                                            <img src="./img/safa1.jpg" alt="">
+                                        </div>
+                    
+                                    </div>
+                    
+                    
+                                    <div class="back">
+                    
+                                        <div class="div-3">
+                                            <img src="./img/alen2.jpg" alt="">
+                                        </div>
+                                        <div class="div-4">
+                                            <img src="./img/haroon2.JPG" alt="">
+                                        </div>
+                                        <div class="div-5">
+                                            <img src="./img/neda2.jpg" alt="">
+                                        </div>
+                                        <div class="div-6">
+                                            <img src="./img/chumky2.jpg" alt="">
+                                        </div>
+                                        <div class="div-7">
+                                            <img src="./img/safa2.jpg" alt="">
+                                        </div>
+                    
+                                    </div>
+                    
+                                </div>
+                                
+                                <div class="thanksMsg">
+                                    <p>Thanks</p>
+                                    <p>for looking</p>
+                                    <p>by</p>
+                                </div>
+                    
+                            </div>
+                        </section>
+                    </div>
+                </div>  
+            </section>
+        </div>
+    </body>
+</html>

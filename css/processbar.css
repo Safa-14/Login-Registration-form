@@ -1,0 +1,188 @@
+/* .h1 {
+  font-weight: lighter;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #1bb91b;
+  -webkit-animation: pulse 2s ease-in;
+          animation: pulse 2s ease-in;
+  border-radius: 15px;
+} */
+.button1 {
+  display: none;
+}
+
+.neda-container {
+  width: 100%;
+  position: absolute;
+  top: -48px;
+}
+
+.neda-container .progressBar {
+  counter-reset: step;
+  margin-top: 75px;
+  padding: 0;
+}
+
+.neda-container .progressBar li {
+  list-style: none;
+  float: left;
+  width: 33.3333%;
+  position: relative;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.neda-container .progressBar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border: 2px solid #ecf0f1;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: #27258b;
+  letter-spacing: 0;
+}
+
+.neda-container .progressBar li:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #ecf0f1;
+  top: 25px;
+  left: -50%;
+  z-index: -1;
+  -webkit-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.neda-container .progressBar li:first-child:after {
+  content: none;
+}
+
+#tologin:target ~ .neda-container > .progressBar > #step1::before {
+  border: 4px solid #1bb91b;
+  -webkit-animation: pulse 3s infinite;
+  animation: pulse 3s infinite;
+}
+
+#tologin:target ~ .neda-container > .progressBar > #step1.active {
+  color: #1bb91b;
+}
+
+#tologin:target ~ .neda-container > .progressBar > #step1.actions {
+  color: #1bb91b;
+}
+
+#toregister:target ~ .neda-container > .progressBar > #step1::before {
+  border: 3px solid #1bb91b;
+}
+
+#toregister:target ~ .neda-container > .progressBar > #step1.active {
+  color: #1bb91b;
+  color: #1bb91b;
+}
+
+#toregister:target ~ .neda-container > .progressBar > #step1.actions {
+  color: #1bb91b;
+  color: #1bb91b;
+}
+
+#toregister:target ~ .neda-container > .progressBar > #step2::after {
+  background-color: #1bb91b;
+  width: 100%;
+}
+
+#toregister:target ~ .neda-container > .progressBar > #step2::before {
+  border: 4px solid #1bb91b;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+}
+
+#toregister:target ~ .neda-container > .progressBar > #step2 .active {
+  color: #1bb91b;
+}
+
+#toregister:target ~ .neda-container > .progressBar > #step2.actions {
+  color: #1bb91b;
+}
+
+#topage3:target ~ .neda-container > .progressBar > #step1::before {
+  border: 3px solid #1bb91b;
+}
+
+#topage3:target ~ .neda-container > .progressBar > #step1.active {
+  color: #1bb91b;
+}
+
+#topage3:target ~ .neda-container > .progressBar > #step1.actions {
+  color: #1bb91b;
+}
+
+#topage3:target ~ .neda-container > .progressBar > #step2::after {
+  background-color: #1bb91b;
+  width: 100%;
+}
+
+#topage3:target ~ .neda-container > .progressBar > #step2::before {
+  border: 3px solid #1bb91b;
+}
+
+#topage3:target ~ .neda-container > .progressBar > #step2 .active {
+  color: #1bb91b;
+}
+
+#topage3:target ~ .neda-container > .progressBar > #step2.actions {
+  color: #1bb91b;
+}
+
+#topage3:target ~ .neda-container > .progressBar > #step3::after {
+  background-color: #1bb91b;
+  width: 100%;
+}
+
+#topage3:target ~ .neda-container > .progressBar > #step3::before {
+  border: 4px solid #1bb91b;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+}
+
+#topage3:target ~ .neda-container > .progressBar > #step3 .active {
+  color: #1bb91b;
+}
+
+#topage3:target ~ .neda-container > .progressBar > #step3.actions {
+  color: #1bb91b;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(33, 221, 190, 0.4);
+    box-shadow: 0 0 0 0 rgba(33, 221, 190, 0.4);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px 30px rgba(33, 131, 221, 0);
+    box-shadow: 0 0 5px 30px rgba(33, 131, 221, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(33, 221, 190, 0.4);
+    box-shadow: 0 0 0 0 rgba(33, 221, 190, 0.4);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px 30px rgba(33, 131, 221, 0);
+    box-shadow: 0 0 5px 30px rgba(33, 131, 221, 0);
+  }
+}
+/*# sourceMappingURL=processbar.css.map */
